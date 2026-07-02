@@ -665,3 +665,146 @@ footer{
     transform:translateY(-3px);
     box-shadow:0 10px 25px rgba(212,175,55,.35);
 }
+
+/* ==========================
+   CARD ANIMAZIONE BASE
+========================== */
+
+.card{
+    background:#1b1b1b;
+    padding:40px;
+    border-radius:20px;
+    transition:0.4s ease;
+    position:relative;
+    overflow:hidden;
+}
+
+/* hover effetto sollevamento */
+.card:hover{
+    transform:translateY(-12px) scale(1.03);
+    box-shadow:0 25px 50px rgba(0,0,0,.5);
+}
+
+/* icona animata */
+.card i{
+    font-size:45px;
+    color:#d4af37;
+    margin-bottom:25px;
+    transition:0.4s ease;
+}
+
+.card:hover i{
+    transform:rotate(10deg) scale(1.1);
+}
+
+/* linea luce che passa */
+.card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(212,175,55,0.15),
+        transparent
+    );
+    transition:0.6s;
+}
+
+.card:hover::before{
+    left:100%;
+}
+
+/* animazione entrata */
+.card{
+    opacity:0;
+    transform:translateY(30px);
+    animation:fadeUp 0.8s forwards;
+}
+
+.card:nth-child(1){
+    animation-delay:0.2s;
+}
+
+.card:nth-child(2){
+    animation-delay:0.4s;
+}
+
+.card:nth-child(3){
+    animation-delay:0.6s;
+}
+
+@keyframes fadeUp{
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+    
+}
+
+/* ==========================
+   RECENSIONI HOME
+========================== */
+
+.reviews{
+    padding:100px 10%;
+    text-align:center;
+    background:#0f0f0f;
+}
+
+.reviews h2{
+    font-size:42px;
+    margin-bottom:60px;
+    color:#fff;
+}
+
+/* grid card */
+.review-cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.trovaci{
+    text-align:center;
+    margin-top:60px;
+}
+
+/* singola card */
+.review-card{
+    background:#1b1b1b;
+    padding:30px;
+    border-radius:20px;
+    transition:0.4s ease;
+    position:relative;
+}
+
+/* hover effetto premium */
+.review-card:hover{
+    transform:translateY(-12px) scale(1.03);
+    box-shadow:0 25px 50px rgba(0,0,0,.6);
+}
+
+/* stelle */
+.stars{
+    color:#d4af37;
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+/* testo */
+.review-card p{
+    color:#ccc;
+    font-size:15px;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+/* nome */
+.review-card h4{
+    color:#fff;
+    font-weight:600;
+}
