@@ -1,139 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contatti | Barber Shop</title>
 
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
 
-<body>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo">FM Immagine Uomo</div>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-
-    <div class="logo">
-        FM Immagine Uomo
-    </div>
-
-    <ul>
+      <ul>
         <li><a href="Home.html">Home</a></li>
         <li><a href="Servizi.html">Servizi</a></li>
         <li><a href="Prezzi.html">Prezzi</a></li>
-        <li><a href="Contatti.html">Contatti</a></li>
-    </ul>
+        <li><a href="#">Contatti</a></li>
+      </ul>
 
-    <a href="tel:+393332198625" class="btn">Chiama ora</a>
+      <a href="tel:+393332198625" class="btn">Chiama ora</a>
+    </nav>
 
-</nav>
-
-<!-- CONTATTI -->
-<section class="contact-section">
-
-    <div class="contact-title">
+    <!-- CONTATTI -->
+    <section class="contact-section">
+      <div class="contact-title">
         <h1>Contattaci</h1>
         <p>Prenota il tuo appuntamento oppure vieni a trovarci 💈</p>
-    </div>
+      </div>
 
-    <div class="contact-container">
-
+      <div class="contact-container">
         <!-- INFO SINISTRA -->
         <div class="contact-info">
+          <h2>Informazioni</h2>
 
-            <h2>Informazioni</h2>
-
-            <div class="info-box">
-                <i class="fa-solid fa-location-dot"></i>
-                <div>
-                    <h3>Indirizzo</h3>
-                    <p>10093 Collegno TO, Italia</p>
-                </div>
+          <div class="info-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h3>Indirizzo</h3>
+              <p>10093 Collegno TO, Italia</p>
             </div>
+          </div>
 
-            <div class="info-box">
-                <i class="fa-solid fa-phone"></i>
-                <div>
-                    <h3>Telefono</h3>
-                    <p>011 787041</p>
-                    <p>333 219 8625</p>
-                </div>
+          <div class="info-box">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <h3>Telefono</h3>
+              <p>011 787041</p>
+              <p>333 219 8625</p>
             </div>
+          </div>
 
-            <div class="info-box">
-                <i class="fa-solid fa-envelope"></i>
-                <div>
-                    <h3>Email</h3>
-                    <p>FM@example.it</p>
-                </div>
+          <div class="info-box">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <p>FM@example.it</p>
             </div>
+          </div>
 
-            <div class="info-box">
-                <i class="fa-solid fa-clock"></i>
-                <div>
-                    <h3>Orari</h3>
-                    <p>Mar - Sab<br>09:00 - 19:30</p>
-                </div>
+          <div class="info-box">
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <h3>Orari</h3>
+              <p>Mar - Sab<br />09:00 - 19:30</p>
             </div>
-
+          </div>
         </div>
 
         <!-- FORM DESTRA -->
         <div class="contact-form-card">
+          <h2>Richiedi informazioni</h2>
 
-            <h2>Richiedi informazioni</h2>
+          <p class="contact-form-sub">
+            Per prenotare o chiedere informazioni puoi scriverci qui 👍
+          </p>
 
-            <p class="contact-form-sub">
-                Per prenotare o chiedere informazioni puoi scriverci qui 👍
-            </p>
+          <form>
+            <div class="contact-form-field">
+              <label>Nome e Cognome</label>
+              <input type="text" placeholder="Mario Rossi" />
+            </div>
 
-            <form>
+            <div class="contact-form-field">
+              <label>Telefono</label>
+              <input type="tel" placeholder="+39 000 000 0000" />
+            </div>
 
-                <div class="contact-form-field">
-                    <label>Nome e Cognome</label>
-                    <input type="text" placeholder="Mario Rossi">
-                </div>
+            <div class="contact-form-field">
+              <label>Messaggio</label>
+              <textarea rows="5" placeholder="Scrivi qui..."></textarea>
+            </div>
 
-                <div class="contact-form-field">
-                    <label>Telefono</label>
-                    <input type="tel" placeholder="+39 000 000 0000">
-                </div>
-
-                <div class="contact-form-field">
-                    <label>Messaggio</label>
-                    <textarea rows="5" placeholder="Scrivi qui..."></textarea>
-                </div>
-
-                <button type="submit" class="contact-submit-btn">
-                    📞 Richiedi 
-                </button>
-
-            </form>
-
+            <button type="submit" class="contact-submit-btn">
+              📞 Richiedi
+            </button>
+          </form>
         </div>
-
+      </div>
+    </section>
+    <div class="trovaci">
+      <h1 class="trovaci">Dove trovarci</h1>
+      <br />
     </div>
-
-</section>
-<div class="trovaci">
-        <h1 class="trovaci">Dove trovarci</h1>
-    </div>
-<!-- MAPPA -->
-<section class="map">
-
-    <iframe style="border:0;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d45073.78363319725!2d7.5105746!3d45.0835325!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886b04409ed695%3A0xb59a9e5f739a07cc!2sFm%20Immagine%20Uomo!5e0!3m2!1sit!2sit!4v1783008244908!5m2!1sit!2sit" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-
-</section>
-<footer>
-
-    <p>
-        © 2026 Barber Studio - Tutti i diritti riservati
-    </p>
-
-</footer>
-</body>
-
+    <!-- MAPPA -->
+    <section class="map">
+      <iframe
+        style="border: 10px"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d45073.78363319725!2d7.5105746!3d45.0835325!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886b04409ed695%3A0xb59a9e5f739a07cc!2sFm%20Immagine%20Uomo!5e0!3m2!1sit!2sit!4v1783008244908!5m2!1sit!2sit"
+        width="300"
+        height="500"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+      ></iframe>
+    </section>
+    <footer>
+      <p>© 2026 Barber Studio - Tutti i diritti riservati</p>
+    </footer>
+  </body>
 </html>
