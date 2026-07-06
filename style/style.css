@@ -817,3 +817,90 @@ footer {
   border: none;
   border-radius: 12px;
 }
+
+/* NAVBAR MOBILE */
+/* HAMBURGER ICON */
+.hamburger {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: white;
+}
+
+/* MOBILE NAVBAR */
+
+/* NAVIGATION BOTTOM - STILE APP MOBILE */
+.nav-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  display: none;
+  background: #000;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 2px solid #444;
+  z-index: 9999;
+}
+
+.nav-bottom a {
+  color: white;
+  font-size: 13px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-bottom i {
+  font-size: 22px;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .navbar div {
+    text-align: center;
+  }
+
+  .navbar ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: black;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 20px 0;
+    display: none;
+  }
+
+  .navbar .btn {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+  .nav-bottom {
+    display: flex;
+  }
+
+  .nav-bottom a {
+    text-decoration: none;
+  }
+}
+
+
