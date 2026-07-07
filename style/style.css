@@ -80,7 +80,7 @@ body {
 
 .hero {
   height: 100vh;
-  background: url("https://images.unsplash.com/photo-1503951458645-643d53bfd90f?w=1600")
+  background: url("../src/immagie_locale.jpg")
     center/cover;
   display: flex;
   justify-content: center;
@@ -903,4 +903,6 @@ footer {
   }
 }
 
-
+.prodotti-img{
+  height: 5%;
+}
