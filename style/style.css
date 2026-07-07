@@ -916,3 +916,17 @@ footer {
   align-items: center;
   position: relative;
 }
+
+.hero3{
+  height: 100vh;
+  background-image: url("../src/immagine-barbiere.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #181818; /* Riempie gli spazi vuoti */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
