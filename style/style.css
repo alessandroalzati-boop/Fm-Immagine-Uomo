@@ -906,3 +906,13 @@ footer {
 .prodotti-img{
   height: 5%;
 }
+
+.hero2{
+  height: 100vh;
+  background: url("../src/immagine_conto.jpg")
+    center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
